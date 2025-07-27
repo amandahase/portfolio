@@ -104,13 +104,35 @@ textarea {
     background-color: var(--bg-color);
     color: var(--main-text);
   }
+
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  /* Nav List */
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .nav-list-item {
+    display: inline-block;
+  }
+
+  .nav-list-item:last-of-type {
+    margin-left: 40px;
+  }
   
   /* Toggle Switch*/
   .theme-switch-wrapper {
     display: flex;
     align-items: center;
   }
-  
+
   .theme-switch {
     display: inline-block;
     height: 34px;
