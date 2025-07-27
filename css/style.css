@@ -198,30 +198,42 @@ textarea {
   }
 
   /* Main Page Content */
-  .main {
-    padding: 0 30px;
-  }
-
   .hero-headline-wrapper {
     width: fit-content;
-    height: calc(50vh - 55px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
   }
 
-  .hero-image-wrapper {
-    height: 50vh;
+  .about {
+    background-color: var(--secondary-text);
+    padding: 40px;
+  }
+
+  .about-image-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 80px;
   }
 
-  .hero-image {
+  .about-image {
     aspect-ratio: 1/1;
     width: 300px;
     object-fit: cover;
+  }
+
+  .about-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--bg-color);
+  }
+
+  .about-info-inner {
+    max-width: 550px;
   }
 
 /* ==========================================================================
