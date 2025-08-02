@@ -102,6 +102,54 @@ textarea {
     --white: #fff;
   }
 
+  .cabin-sketch-regular {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cabin-sketch-bold {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .libertinus-serif-regular {
+    font-family: "Libertinus Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libertinus-serif-semibold {
+    font-family: "Libertinus Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .libertinus-serif-bold {
+    font-family: "Libertinus Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libertinus-serif-regular-italic {
+    font-family: "Libertinus Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .libertinus-serif-semibold-italic {
+    font-family: "Libertinus Serif", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .libertinus-serif-bold-italic {
+    font-family: "Libertinus Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
   body {
     background-color: var(--bg-color);
     transition: background-color 0.5s;
@@ -116,7 +164,7 @@ textarea {
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    background-color: var(--main-text);
+    background-color: var(--bg-color);
     transition: background-color 0.5s;
   }
 
@@ -125,7 +173,7 @@ textarea {
   }
 
   .logo path {
-    fill: var(--accent-color);
+    fill: var(--main-text);
     transition: fill 0.5s;
   }
   
@@ -143,7 +191,11 @@ textarea {
   }
 
   .theme-switch input {
-    display: none;
+    opacity: 0.1;
+  }
+
+  .theme-switch input:focus+.theme-switch {
+    outline: var(--main-text) solid 3px;
   }
 
   .slider {
@@ -159,7 +211,7 @@ textarea {
   }
 
   .slider:before {
-    background-color: var(--main-text);
+    background-color: var(--bg-color);
     transition: background-color 0.5s;
     bottom: 4px;
     content: "";
@@ -189,7 +241,6 @@ textarea {
 
   /* Main Page Content */
   .hero {
-    height: calc(100vh - 55px);
     background-color: var(--bg-color);
     transition: background-color 0.5s;
     padding: 40px;
@@ -232,21 +283,40 @@ textarea {
     color: var(--main-text);
     transition: color 0.5s;
     align-items: center;
-    margin-bottom: 80px
+    margin-bottom: 80px;
   }
 
   .hero-info-inner {
     max-width: 550px;
   }
 
+  .hero-info-headline {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
   /* Footer */
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 40px 20px 40px;
+  }
+
   .footer-nav-list {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
   }
 
-  .footer-nav-item {
-    
+  .footer-nav-link {
+    padding: 7px;
+  }
+
+  .fa-brands {
+    color: var(--main-text);
   }
 
 /* ==========================================================================
