@@ -242,6 +242,8 @@ textarea {
   /* Main Page Content */
   .main {
     padding: 40px;
+    background-color: var(--bg-color);
+    transition: background-color 0.5s;
   }
 
   .hero {
@@ -282,7 +284,9 @@ textarea {
   .footer {
     display: flex;
     justify-content: flex-end;
-    margin: 0 40px 20px 40px;
+    padding: 0 40px 20px 40px;
+    background-color: var(--bg-color);
+    transition: background-color 0.5s;
   }
 
   .footer-nav-list {
@@ -298,11 +302,18 @@ textarea {
     color: var(--main-text);
   }
 
+  /* Tablet Breakpoint */
+  @media (min-width: 786px) {
+    .logo-wrapper {
+      height: 100px;
+    }
+  }
+
   /* Small Desktop Breakpoint */
   @media (min-width: 1024px) {
     /* Main Page Content */
     .main {
-      height: calc(100vh - 230px);
+      height: calc(100vh - 255px);
       min-height: 650px;
     }
 
@@ -323,12 +334,20 @@ textarea {
     .hero-info-wrapper {
       margin-bottom: 0;
       max-width: 550px;
+      margin-right: 40px;
     }
 
     .hero-info-headline {
       font-size: 48px;
       text-align: center;
       margin-bottom: 15px;
+    }
+  }
+
+  /* Medium Desktop Breakpoint */
+  @media (min-width: 1280px) {
+    .hero-info-wrapper {
+      margin-right: 80px;
     }
   }
 
