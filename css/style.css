@@ -25,12 +25,12 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: var(--accent-color);
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: var(--accent-color);
   text-shadow: none;
 }
 
@@ -339,7 +339,7 @@ textarea {
 
     .hero-info-headline {
       font-size: 48px;
-      text-align: center;
+      text-align: left;
       margin-bottom: 15px;
     }
   }
