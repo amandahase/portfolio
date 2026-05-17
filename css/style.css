@@ -304,6 +304,10 @@ textarea {
     color: var(--main-text);
   }
 
+  .fa-brands:hover {
+    color: var(--secondary-text);
+  }
+
   /* Tablet Breakpoint */
   @media (min-width: 786px) {
     .logo-wrapper {
