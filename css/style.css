@@ -261,12 +261,14 @@ textarea {
   .hero-image {
     width: 100%;
     border-radius: 0;
-    transition: border-radius 0.5s;
+    transition: border-radius 0.5s, grayscale 0.5s;
+    filter: grayscale(0);
   }
 
   .hero-image:hover {
     border-radius: 50%;
-    transition: border-radius 0.5s;
+    transition: border-radius 0.5s, grayscale 0.5s;
+    filter: grayscale(1);
   }
 
   .hero-info-wrapper {
