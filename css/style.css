@@ -262,13 +262,13 @@ textarea {
     width: 100%;
     border-radius: 0;
     transition: border-radius 0.5s, grayscale 0.5s;
-    filter: grayscale(0);
+    filter: grayscale(1);
   }
 
   .hero-image:hover {
     border-radius: 50%;
     transition: border-radius 0.5s, grayscale 0.5s;
-    filter: grayscale(1);
+    filter: grayscale(0);
   }
 
   .hero-info-wrapper {
@@ -302,6 +302,10 @@ textarea {
 
   .fa-brands {
     color: var(--main-text);
+  }
+
+  .fa-brands:hover {
+    color: var(--secondary-text);
   }
 
   /* Tablet Breakpoint */
